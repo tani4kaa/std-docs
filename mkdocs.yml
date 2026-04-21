@@ -8,5 +8,10 @@ nav:
     - System Specification (SSD): architecture/SSD.md
     - Software Design (SDD): architecture/SDD.md
     - Infrastructure (ISD): architecture/ISD.md
+  - API (Контракти):
+    - OpenAPI (Swagger): openapi.yaml  # Твій створений файл OpenAPI
   - Забезпечення якості (Quality):
     - Test Strategy: quality/test-strategy.md
+    - UI Storybook: frontend/storybook-components.md
+  - Автоматизація (DevOps):
+    - CI/CD та DoD: ci-cd-and-dod.md

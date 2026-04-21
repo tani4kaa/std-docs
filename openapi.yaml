@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Order Management API
+  description: Внутрішнє REST API (Internal) для взаємодії Frontend (SPA React) з Backend-сервісами.
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/api
+    description: Локальний сервер розробки
+paths:
+  /orders:
+    post:
+      summary: Створення нового замовлення
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderInput'
+      responses:
+        '201':
+          description: Замовлення успішно створено
+        '400':
+          description: Помилка валідації даних кошика
+  /orders/{id}:
+    get:
+      summary: Отримання замовлення за ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Замовлення знайдено
+        '404':
+          description: Замовлення не знайдено
+components:
+  schemas:
+    OrderInput:
+      type: object
+      properties:
+        userId:
+          type: string
+        productId:
+          type: string
+        quantity:
+          type: integer
+          example: 2
