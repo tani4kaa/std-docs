@@ -1,4 +1,3 @@
-# std-docs
 # Документація: Web-застосунок для управління замовленнями
 
 Програмний продукт призначений для автоматизації життєвого циклу замовлень у сфері роздрібної торгівлі. Система забезпечує єдиний простір для взаємодії клієнтів та адміністраторів магазину.
@@ -9,10 +8,20 @@
 * **Project Managers:** для контролю відповідності розробки бізнес-вимогам.
 
 ## Навігація по документації
+**Архітектура (Architecture)**
 * [System Specification Document (SSD)](architecture/SSD.md)
 * [Software Design Document (SDD)](architecture/SDD.md)
 * [Infrastructure Specification (ISD)](architecture/ISD.md)
-* [Quality Assurance & Testing](quality/test-strategy.md)
+
+**API (Контракти)**
+* [OpenAPI Specification (Swagger)](openapi.yaml)
+
+**Забезпечення якості (Quality)**
+* [Quality Assurance & Testing Strategy](quality/test-strategy.md)
+* [Візуальна документація UI (Storybook)](frontend/storybook-components.md)
+
+**Автоматизація (DevOps)**
+* [CI/CD Pipeline та Definition of Done](ci-cd-and-dod.md)
 
 ## Single Source of Truth (SSoT) та Правила оновлення
 У цьому проєкті реалізовано підхід єдиного джерела істини:
