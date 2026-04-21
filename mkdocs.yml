@@ -1,0 +1,12 @@
+site_name: Order Management System Docs
+theme:
+  name: material
+
+nav:
+  - Головна: README.md
+  - Архітектура (Architecture):
+    - System Specification (SSD): architecture/SSD.md
+    - Software Design (SDD): architecture/SDD.md
+    - Infrastructure (ISD): architecture/ISD.md
+  - Забезпечення якості (Quality):
+    - Test Strategy: quality/test-strategy.md
